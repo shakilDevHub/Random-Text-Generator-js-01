@@ -57,7 +57,7 @@ p{
     border: 2px solid var(--themeColor);
     font-size: 16px;
     line-height: 24px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
 #dummyText.error{
