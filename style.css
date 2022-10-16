@@ -4,20 +4,18 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    font-family: 'Poppins', sans-serif;
 }
 :root{
-    --themeColor: #0466c8;
+    --themeColor: #34495e;
 }
 body{
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
     background: var(--themeColor);
     padding: 50px 0;
-    font-family: 'Poppins', sans-serif;
 }
 .wrapper{
     background: #fff;
@@ -30,34 +28,29 @@ body{
     gap: 20px;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.4);
 }
 p{
     width: 100%;
     font-size: 20px;
-    text-align: center;
     line-height: 30px;
-    color: var(--themeColor);
-    text-shadow: 1px 1px solid #000,
-                 2px 2px solid #000;
-    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-align: center;
     background: var(--themeColor);
     color: #ffffff;
     padding: 10px 5px;
     border-radius: 5px;
     user-select: none;
     text-transform: uppercase;
-    font-weight: 800;
 }
 #dummyText{
-    display: inline-block;
     width: 100%;
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid var(--themeColor);
     font-size: 16px;
     line-height: 24px;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
 #dummyText.error{
@@ -76,7 +69,6 @@ button{
     color: #fff;
     font-size: 16px;
     line-height: 24px;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
     cursor: pointer;
 }
@@ -84,22 +76,23 @@ button:active{
     transform: scale(0.95);
 }
 textarea{
-    display: inline-block;
     width: 100%;
     height: 200px;
     border: 2px solid var(--themeColor);
     border-radius: 10px;
-    padding: 30px 20px;
+    padding: 10px 20px;
     font-size: 16px;
     line-height: 26px;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
     resize: none;
     overflow: auto;
     text-align: justify;
     user-select: none;
-    overflow: -moz-hidden-unscrollabl;
+    overflow: hidden;
 }
-textarea::-webkit-scrollbar{
-    width: 0;
+.dummyMainText{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: lowercase;
+    display: none;
 }
